@@ -1,0 +1,88 @@
+.content-area {
+    flex: 1; /* Prend tout l'espace disponible */
+    padding: 20px; /* Garde le contenu à l'intérieur bien espacé */
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Garde les coins arrondis */
+    margin: 0; /* Supprimez les marges */
+    height: calc(100vh - 80px); /* Ajustez pour éviter l'espace sous le header (header est environ 80px) */
+    overflow-y: auto; /* Permet le défilement si le contenu dépasse */
+}
+
+/* Conteneur principal */
+.dashboard-container {
+    display: flex;
+    height: 100vh; /* S'assure que le conteneur prend toute la hauteur de l'écran */
+}
+
+/* Contenu principal */
+.dashboard-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Remplit tout l'espace vertical restant */
+}
+
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #E4E4E7;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #E4E4E7
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-list li:hover {
+    background-color: #81C784;
+}
+
+.menu-list li.active {
+    background-color: #81C784;
+}
+
+
+
+.dashboard-header {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.dashboard-header button {
+    background-color: #4CAF4F;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dashboard-header button:hover {
+    background-color: #4CAF4F;
+}
+
+
